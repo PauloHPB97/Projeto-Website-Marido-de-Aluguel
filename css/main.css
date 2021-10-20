@@ -24,7 +24,6 @@ header {
 .menu-principal {
     align-items: center;
     justify-content: space-around;
-    
 }
 
 
@@ -34,6 +33,7 @@ header {
     height: 100%;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 70px;
 }
 
 .flex-conteiner h5{
@@ -71,7 +71,10 @@ header {
 .menu-items a{
     text-decoration: none;
     color: var(--cor-terciaria);
+}
 
+.menu-items a:hover {
+    color: var(--cor-secundaria);
 }
 
 #pag-inicial {
@@ -183,7 +186,7 @@ header {
     header {
         flex-direction: row;
         width: 100%;
-        height: 60px;
+        height: 100px;
         position: fixed;
     }
 
@@ -195,9 +198,10 @@ header {
     .flex-conteiner {
         flex-direction: row;
         justify-content: flex-start;
-        height: 100%;
-        margin-left: 30px;
-        
+        height: 80%;
+        margin: auto;
+        margin-left: 5%;
+        padding: 1%;
     }
 
     .flex-conteiner h5{
@@ -217,7 +221,7 @@ header {
     }
 
     .flex-interface {
-        width: 90%;
+        width: 100%;
         height: auto;
         top: 0;
     }
@@ -225,7 +229,7 @@ header {
     .menu-items {
         flex-direction: row;
         justify-content: flex-end;
-        padding-right: 80px;
+        padding-right: 5%;
     }
 
     .menu {
@@ -301,7 +305,8 @@ header {
     }
 
     #icone-ferramenta {
-        width: 10%;
+        width: 15%;
+        min-width: 50px;
     }
 
     #icone-menu {

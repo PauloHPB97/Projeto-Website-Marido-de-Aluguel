@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    --cor-principal: rgb(34, 34, 34);
+    --cor-secundaria: rgb(179, 136, 101);
+    --cor-terciaria: #ccc;
+    --cor-quartenaria: #fff;
+    --cor-quintaria: rgb(133, 133, 133);
+}
+
+header {
+    background-color: var(--cor-principal);
+    width: 19.5%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    color: var(--cor-terciaria);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(78, 78, 78);
+}
+
+.menu-principal {
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.flex-conteiner {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.flex-conteiner h5{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-quartenaria);
+}
+.flex-conteiner p {
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--cor-terciaria);
+    text-transform: uppercase;
+    font-weight: lighter;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.logo {
+    justify-content: space-between;
+    height: 180px;
+}
+
+.menu-items{
+    height: 180px;
+    justify-content: space-between;
+}
+
+.menu-items li{
+    list-style: none;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.menu-items a:hover {
+    color: var(--cor-secundaria);
+}
+
+#pag-selecionada {
+    color: var(--cor-secundaria);
+}
+
+.interface {
+    width: 80.5%;
+    min-height: 1550px;
+    top: 50px;
+    position: relative;
+    float: right;
+    z-index: 4;
+}
+
+.interface h1{
+    font-weight: lighter;
+    color: var(--cor-quartenaria);
+}
+
+#imagem-fundo {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+    top: -320px;
+}
+
+.flex-interface {
+    position: relative;
+    width: 80.5%;
+    height: 300px;
+    margin: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.texto-principal h1{
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 4;
+    color: #fff;
+    position: relative;
+}
+
+.interface-conteudo-principal {
+    position: relative;
+    height: 1000px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.interface-conteudo-01 {
+    width: 79%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.interface-conteudo-01 p {
+    color: var(--cor-quintaria);
+    letter-spacing: 1.1px;
+}
+
+.interface-conteudo-01 h3 {
+    padding-top: 70px;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    line-height: 1.4em;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+    color: var(--cor-principal);
+}
+
+.interface-conteudo-02 {
+    width: 79%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    color: var(--cor-principal);
+}
+
+.servico {
+    width: 130px;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+.interface-conteudo-02 img {
+    height: 80px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+
+.hr-conteudo-02 {
+    width: 79%;
+    margin: auto;
+    background-color: var(--cor-quartenaria);
+    opacity: 0.4;
+}
+
+#martelo-icon {
+    opacity: 0.6;
+}
+
+.interface-conteudo-03 {
+    width: 79%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    padding-top: 20px;
+    color: var(--cor-principal);
+}
+
+.servico-titulo {
+    width: 28%;
+    font-size: 26px;
+    font-weight: normal;
+    color: var(--cor-principal); 
+    padding-top: 1%;
+    padding-right: 8%;
+}
+
+.servico-titulo h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.servico-titulo p {
+    font-size: 17px;
+    color: var(--cor-secundaria);
+    padding-top: 8px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1px;
+}
+
+.servico-descricao {
+    width: 60%;
+}
+
+.servico-descricao ul li{
+    color: var(--cor-quintaria);
+    list-style: none;
+    padding-bottom: 16px;
+    padding: 1% 2%;
+    font-weight: lighter;
+}
+
+.servico-descricao ul li::before {
+    content: '>';
+    font-family: cursive;
+    font-size: 18px;
+    padding-right: 25px;
+}
+
+.rodape {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    z-index: 4;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.rodape h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.rodape p {
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.popup-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: var(--cor-quartenaria);
+    display: none;
+    z-index: 99;
+}
+
+.mostrar {
+    display: block;
+}
+
+#icone-menu {
+    height: 30px;
+    width: auto;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#btn-popup {
+    height: 20px;
+    width: auto;
+    display: none;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 990px) {
+
+    html {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+    }
+
+    .menu-principal {
+        flex-direction: row;
+        position: fixed;
+    }
+
+    .flex-conteiner {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 80%;
+        margin: auto;
+        margin-left: 5%;
+        padding: 1%;
+        width: 100%;
+    }
+
+    .flex-conteiner h5{
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .flex-conteiner p {
+        font-size: 0;
+    }
+
+    .interface {
+        width: 100%;
+        height: auto;
+        float: none;
+        word-break: break-all;
+    }
+
+    .flex-interface {
+        width: 100%;
+        height: auto;
+        top: 60px;
+        position: relative;
+    }
+
+    .texto-principal {
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        z-index: 4;
+        padding: 2%;
+    }
+
+    .texto-principal h1 {
+        word-wrap: break-word;
+        font-size: 40px;
+    }
+
+    .menu-items {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 5%;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .menu p {
+        font-size: 10px;
+    }
+
+    .menu li{
+        font-size: 0px;
+        flex-direction: row;
+        display:inline;
+    }
+
+    .rodape {
+       width: 100%;
+       height: 30%;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 5%;
+    }
+
+    .menu-modal {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        height: 340px;
+        width: 80%;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .menu-modal a {
+        text-decoration: none;
+        color: rgb(139, 139, 139);
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .hr-popup {
+        background-color: rgba(206, 206, 206, 0.5);
+        height: .05px;
+    }
+
+    #fecha-x {
+        position: relative;
+        text-align: right;
+        left: 10px;
+        width: 81%;
+        height: 20px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    #btn-fechar {
+        align-items: flex-end;
+        height: 20px;
+        margin-right: auto;
+        font-size: 20px;
+        color: rgb(139, 139, 139);
+    }
+
+    #imagem-fundo {
+        width: 110%;
+        top:0;
+        right: auto;
+        position: relative;
+        z-index: 0;
+    }
+
+    #marido-qualificado {
+        overflow: hidden;
+    }
+
+    #icone-ferramenta {
+        width: 10%;
+        min-width: 50px;
+    }
+
+    #icone-menu {
+        display: block;
+    }
+
+    @keyframes modal {
+        from {
+            opacity: 0;
+            transform: translate3d(-60px, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .mostrar .modal {
+        animation: modal, .3s;
+    }
+
+    #btn-popup {
+        background-color: var(--cor-principal);
+        border: 2px solid var(--cor-principal);
+        display: block;
+    }
+
+    .interface-conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .interface-conteudo-01 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 0;
+        width: 110%;
+    }
+
+    .interface-conteudo-01 p {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .interface-conteudo-02 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 110%;
+    }
+
+    .interface-conteudo-03 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+    }
+
+    .servico {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .hr-conteudo-02 {
+        width: 85%;
+    }
+
+    .servico-titulo {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .servico-descricao {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+}
